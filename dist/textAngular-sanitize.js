@@ -229,6 +229,14 @@ var htmlAttrs = makeMap('abbr,align,alt,axis,bgcolor,border,cellpadding,cellspac
     'scope,scrolling,shape,size,span,start,summary,target,title,type,'+
     'valign,value,vspace,width');
 
+var materialLayoutAttrs = makeMap('layout,layout-xs,layout-gt-xs,layout-sm,layout-gt-sm,layout-md,layout-gt-md,'+
+    'layout-lg,layout-gt-lg,layout-xl,flex,flex-order,flex-order-xs,flex-order-gt-xs,flex-order-sm,flex-order-gt-sm,'+
+    'flex-order-md,flex-order-gt-md,flex-order-lg,flex-order-gt-lg,flex-order-xl,flex-offset,flex-offset-xs,'+
+    'flex-offset-gt-xs,flex-offset-sm,flex-offset-gt-sm,flex-offset-md,flex-offset-gt-md,flex-offset-lg,flex-offset-gt-lg,'+
+    'flex-offset-xl,layout-align,layout-align-xs,layout-align-gt-xs,layout-align-sm,layout-align-gt-sm,layout-align-md,'+
+    'layout-align-gt-md,layout-align-lg,layout-align-gt-lg,layout-align-xl,hide-xsshow-xs,hide-gt-xs,hide-sm,hide-gt-sm,'+
+    'hide-md,hide-gt-md,hide-lgshow-lg,hide-gt-lg,hide-xl');
+
 // SVG attributes (without "id" and "name" attributes)
 // https://wiki.whatwg.org/wiki/Sanitization_rules#svg_Attributes
 var svgAttrs = makeMap('accent-height,accumulate,additive,alphabetic,arabic-form,ascent,' +
@@ -251,7 +259,8 @@ var svgAttrs = makeMap('accent-height,accumulate,additive,alphabetic,arabic-form
 var validAttrs = angular.extend({},
                                 uriAttrs,
                                 svgAttrs,
-                                htmlAttrs);
+                                htmlAttrs,
+                                materialLayoutAttrs);
 
 function makeMap(str) {
   var obj = {}, items = str.split(','), i;
