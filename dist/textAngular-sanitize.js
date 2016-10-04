@@ -230,7 +230,7 @@ var htmlAttrs = makeMap('abbr,align,alt,axis,bgcolor,border,cellpadding,cellspac
     'valign,value,vspace,width');
 
 var materialLayoutAttrs = makeMap('layout,layout-xs,layout-gt-xs,layout-sm,layout-gt-sm,layout-md,layout-gt-md,'+
-    'layout-lg,layout-gt-lg,layout-xl,flex,flex-order,flex-order-xs,flex-order-gt-xs,flex-order-sm,flex-order-gt-sm,'+
+    'layout-lg,layout-gt-lg,layout-xl,flex,flex-xs,flex-sm,flex-md,flex-lg,flex-xl,flex-order,flex-order-xs,flex-order-gt-xs,flex-order-sm,flex-order-gt-sm,'+
     'flex-order-md,flex-order-gt-md,flex-order-lg,flex-order-gt-lg,flex-order-xl,flex-offset,flex-offset-xs,'+
     'flex-offset-gt-xs,flex-offset-sm,flex-offset-gt-sm,flex-offset-md,flex-offset-gt-md,flex-offset-lg,flex-offset-gt-lg,'+
     'flex-offset-xl,layout-align,layout-align-xs,layout-align-gt-xs,layout-align-sm,layout-align-gt-sm,layout-align-md,'+
